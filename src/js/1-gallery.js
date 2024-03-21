@@ -74,22 +74,22 @@ const markupGallery = images
 <img 
 class="gallery-image"
 src="${image.preview}"
-alt="${image.description}" width="360"> 
+alt="${image.description}"> 
 </a>
 </li>`) 
 .join(""); 
 list.insertAdjacentHTML("beforeend", markupGallery);
 
-list.style.display = "flex";
-list.style.flexDirection = "row";
-list.style.flexWrap = "wrap";
-list.style.width = "1440px"
-list.style.height = "848px"
-list.style.gap = "48px 24px";
-list.style.padding = "100px 156px";
-list.style.top = "-679px"
-list.style.left = "-792px"
-list.style.listStyleType = "none";
+// list.style.display = "flex";
+// list.style.flexDirection = "row";
+// list.style.flexWrap = "wrap";
+// list.style.width = "1440px"
+// list.style.height = "848px"
+// list.style.gap = "48px 24px";
+// list.style.padding = "100px 156px";
+// list.style.top = "-679px"
+// list.style.left = "-792px"
+// list.style.listStyleType = "none";
 
 
 const lightbox = new SimpleLightbox('.gallery a', {
