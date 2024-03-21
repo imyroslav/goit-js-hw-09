@@ -26,7 +26,7 @@ form.addEventListener('submit', e => {
   localStorage.removeItem('feedback-form-state');
   
   if (form.elements.email.value === '' || form.elements.message.value === '' )   {
-    alert('Please enter your message');
+    alert('Please fill in all the fields!');
   }
 
   console.log({
