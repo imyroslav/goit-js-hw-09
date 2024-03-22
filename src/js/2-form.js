@@ -25,7 +25,7 @@ form.addEventListener('submit', e => {
   e.preventDefault();
   localStorage.removeItem('feedback-form-state');
   
-  if (form.elements.email.value === '' || form.elements.message.value === '' )   {
+  if (form.elements.email.value.trim() === '' || form.elements.message.value.trim() === '' )   {
     alert('Please fill in all the fields!');
   }
 
