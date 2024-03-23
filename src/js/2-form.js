@@ -28,11 +28,13 @@ form.addEventListener('submit', e => {
   if (form.elements.email.value.trim() === '' || form.elements.message.value.trim() === '' )   {
     alert('Please fill in all the fields!');
   }
-
-  console.log({
-    email: form.elements.email.value.trim(),
-    message: form.elements.message.value.trim(),
-  });
+  else {
+    console.log({
+      email: form.elements.email.value.trim(),
+      message: form.elements.message.value.trim(),
+    });
+  }
+  
 
   form.reset();
 });
